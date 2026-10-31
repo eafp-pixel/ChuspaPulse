@@ -5,7 +5,7 @@
 
 #include "iformatter.hpp"
 
-namespace ChuspaPulse::formatters {
+namespace chuspapulse::formatters {
 
 class FormatterPrometheus : public IFormatter {
 public:
@@ -14,10 +14,10 @@ public:
     std::string contentType() const override;
 
     std::string formatear(
-        const ChuspaPulse::core::Snapshot& snapshot) const override;
+        const chuspapulse::core::Snapshot& snapshot) const override;
 
     std::string formatearHistorial(
-        const std::vector<ChuspaPulse::core::Snapshot>& snapshots) const override;
+        const std::vector<chuspapulse::core::Snapshot>& snapshots) const override;
 };
 
-} // namespace ChuspaPulse::formatters
+} // namespace chuspapulse::formatters
