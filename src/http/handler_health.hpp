@@ -3,7 +3,7 @@
 #include <chrono>
 #include <string>
 
-namespace ChuspaPulse::http {
+namespace chuspapulse::http {
 
 /**
  * @brief Genera una respuesta JSON para el endpoint GET /health.
@@ -19,4 +19,4 @@ namespace ChuspaPulse::http {
  */
 std::string handleHealth(std::chrono::steady_clock::time_point start_time);
 
-} // namespace ChuspaPulse::http
+} // namespace chuspapulse::http
